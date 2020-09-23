@@ -590,12 +590,12 @@ u16 mevent_081445C0(u32 command)
     return 0;
 }
 
-void sub_801B940(void)
+void ResetReceivedWonderCardFlag(void)
 {
     gUnknown_02022C70 = FALSE;
 }
 
-bool32 sub_801B94C(u16 a0)
+bool32 MEventHandleReceivedWonderCard(u16 a0)
 {
     #ifndef FREE_MYSTERY_EVENT_BUFFERS
     gUnknown_02022C70 = FALSE;
@@ -613,7 +613,7 @@ bool32 sub_801B94C(u16 a0)
     return TRUE;
 }
 
-void sub_801B990(u32 a0, u32 a1)
+void RecordIdOfWonderCardSenderByEventType(u32 a0, u32 a1)
 {
     #ifndef FREE_MYSTERY_EVENT_BUFFERS
     if (gUnknown_02022C70)
