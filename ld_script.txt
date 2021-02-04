@@ -329,7 +329,11 @@ SECTIONS {
         src/gym_leader_rematch.o(.text);
         src/battle_transition_frontier.o(.text);
         src/international_string_util.o(.text);
+<<<<<<< HEAD
         src/quests.o(.text);
+=======
+        src/dexnav.o(.text);
+>>>>>>> f9a0272d27f8cbd4f6a21352edc4d403715bab0d
     } =0
 
     script_data :
@@ -691,7 +695,11 @@ SECTIONS {
         data/mystery_event.o(.rodata);
         src/m4a_tables.o(.rodata);
         data/sound_data.o(.rodata);
+<<<<<<< HEAD
         src/quests.o(.rodata);
+=======
+        src/dexnav.o(.rodata);
+>>>>>>> f9a0272d27f8cbd4f6a21352edc4d403715bab0d
     } =0
 
     song_data :
